@@ -1,6 +1,7 @@
 {
   "name": "taller_exporting_functionsjs",
   "version": "1.0.0",
+  "type": "module",
   "description": "🧪 Laboratorio: Exportando Funciones en JavaScript\r Este laboratorio consiste en practicar la modularización del código usando export e import en JavaScript. A lo largo de los ejercicios, trabajarás con constantes, funciones matemáticas, manejo de usuarios y descuentos por rol.",
   "main": "main.js",
   "scripts": {
