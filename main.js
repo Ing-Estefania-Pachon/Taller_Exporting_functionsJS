@@ -28,7 +28,7 @@ function llamarDia(){
     console.log(DIAS_SEMANA[numero]);
 }
 
-/// Mostrar
+//& Mostrar
 // let circulo1 = areaCirculo();
 // let producto1 = calcularPrecioIVA();
 // let dia1 = llamarDia();
@@ -38,20 +38,42 @@ function llamarDia(){
 //  1. Importar las 4 funciones en main.js
 import {sumar, restar, multiplicar, areaCirculo2} from './operacionesMatematicas.js'
 
-//  2. Usar cada función con valores de ejemplo y mostrar resultado
+//&  2. Usar cada función con valores de ejemplo y mostrar resultado
 // let suma1 = console.log("El resultado es: ", sumar());
 // let resta1 = console.log("El resultado es: ", restar());
 // let multi1 = console.log("El resultado es: ", multiplicar());
 // let circulo2 = areaCirculo2();
 
 // ! Ejercicio 3: Calculadora de Impuestos
+//  •Calcular:
+//  •Precio total de 3 productos.
+//  •Aplicar impuestos al total.
+//  •Aplicar descuento al total con impuestos.
 
 import { CalculadoraImpuestos } from './operacionesMatematicas.js'
 
-let producto2 = new CalculadoraImpuestos();
-producto2.calcularTotal();
-producto2.aplicarImpuestos();
-producto2.aplicarIVA()
+//&  •Mostrar todos los pasos intermedios y el resultado final.
+// let producto2 = new CalculadoraImpuestos();
+// producto2.calcularTotal();
+// producto2.aplicarImpuestos();
+// producto2.aplicarIVA()
 
+// ! Ejercicio 4: Gestión de Usuarios
+// •Importa ROLES, crearUsuario y esAdmin.
+import { crearUsuario } from "./usuarios.js";
 
-// new Date(),toLocalDateString("es-CO") para la fecha 
+//  •Crea dos usuarios:
+//  •Usuario 1: Nombre "Pedro", rol ROLES.ADMIN.
+//  •Usuario 2: Nombre "Carlos", rol ROLES.CLIENTE.
+//  •Muestra en consola:
+// const usuario1 = crearUsuario();
+// const usuario2 = crearUsuario();
+
+// ! Ejercicio 5: Sistema de Descuentos por Rol
+
+import { CalculadoraPorRol } from "./operacionesMatematicas.js";
+
+const usuario1 = crearUsuario();
+
+let calculadora1 = new CalculadoraPorRol(usuario1)
+calculadora1.ejecutarTodo()
